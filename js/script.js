@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // alert('bvdfsj');
 // const result = confirm('we use coockies at site');
@@ -26,3 +26,16 @@
 //     decr = 6;
 
 //     console.log(++incr , --decr);
+
+ const numberOfFilms = +prompt('how much films did you see?', '');
+
+
+const personalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: {},
+   privat: false
+};
+
+

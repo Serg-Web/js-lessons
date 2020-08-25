@@ -34,8 +34,22 @@ const personalMovieDB = {
    count: numberOfFilms,
    movies: {},
    actors: {},
-   genres: {},
+   genres: [],
    privat: false
 };
 
+const ask = prompt('Один из последних просмотренных фильмов?', '');
+const reit = +prompt('На сколько оцените его?', '');
+const ask2 = prompt('Один из последних просмотренных фильмов?', '');
+const reit2 = +prompt('На сколько оцените его?', '');
 
+personalMovieDB.movies[ask]=[reit]; 
+personalMovieDB.movies[ask2]=[reit2];
+
+ console.log(personalMovieDB);
+ 
+ /* Обращаемся к обекту personalMovieDB , в нем - к ключю своства - movies (мы оставили пустым)
+    далее мы помещаем свойства: в квадратные скобки ( через точку не сработает), помещаем 
+    ответ на первый вопрос и потом к нему присваеваем ( через "=") ответ на вторй вопрос ( оценка фильма)
+    в КОНСОЛЕ ВЫВЕДИТСЯ Обект с кол-вом фильмов, фильмами которые посмотрели и их оценкой
+    */
